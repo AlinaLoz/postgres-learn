@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  lozita_db_3:
+    build: .
+#    volumes:
+#      - ./postgresql.conf:/var/lib/postgresql/data/postgresql.conf
+    ports:
+      - "127.0.0.1:27188:5432"
+
